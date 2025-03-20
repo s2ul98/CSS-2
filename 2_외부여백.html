@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* body 여백 제거 */
+    body {
+      margin: 0;
+    }
+    /* 모든 div에 테두리 설정 */
+    div {
+      border: 1px solid;
+    }
+    span {
+      background-color: yellowgreen;
+    }
+    /* 여백은 margin or padding으로 사용 */
+    /* padding : 내부여백(나-자식) */
+    /* margin : 외부여백(부모-나) */
+    /* 방향 : 위 오른쪽 아래 왼쪽 */
+    .box2 {
+      margin: 10px 10px 10px 10px;
+    }
+    /* 방향 : 위/아래 , 왼쪽/오른쪽 */
+    .box3 {
+      margin: 10px 30px;
+    }
+    /* 방향 : 모든 방향 */
+    .box4 {
+      margin: 30px;
+    }
+    .box5 {
+      margin-left: 30px;
+      margin-right: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <span>첫번째 박스</span>
+  </div>
+  <div class="box2">
+    <span>두번째 박스</span>
+  </div>
+  <div class="box3">
+    <span>세번째 박스</span>
+  </div>
+  <div class="box4">
+    <span>네번째 박스</span>
+  </div>
+  <div class="box5">
+    <span>다섯번째 박스</span>
+  </div>
+</body>
+</html>

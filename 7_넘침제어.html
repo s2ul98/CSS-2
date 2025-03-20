@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    .parent {
+      width: 300px;
+      height: 100px;
+      background-color: orange;
+      margin: 20px;
+    }
+    /* 자식의 너비가 부모보다 큼 */
+    .child {
+      width: 300px;
+      height: 100px;
+      background-color: green;
+    }
+    .p2 {
+      overflow: hidden;
+    }
+    /* 3번째 box */
+    /* 스크롤을 이용하여 넘치는 부분 확인 가능 */
+    .p3 {
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+  <!-- parent와 p1이라는 class 입력 -->
+   <!-- class를 여러개 사용하는 이유 : 여러가지 스타일 적용 -->
+  <div class="parent p1">
+    <div class="child>"></div>
+  </div>
+  <div class="parent p2">
+    <div class="child>"></div>
+  </div>
+  <div class="parent p3">
+    <div class="child>"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* span, p태그의 테두리, 배경색 변경 */
+    span, p {
+      border: 1px solid;
+      background-color: yellowgreen;
+    }
+    /* display : 출력 */
+    /* p 태그를 block에서 inline으로 변경 */
+    .p2 {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <span>hello</span>
+  <p>world</p>
+  <p class="p2">world</p>
+</body>
+</html>
+
+<!-- 
+span은 인라인 요소
+인라인 요소는 너비가 컨텐츠 크기만큼 늘어난다
+p는 블록요소
+블록요소는 너비가 화면만큼 늘어난다
+-->

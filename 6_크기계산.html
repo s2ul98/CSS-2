@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 모든 div에 크기, 여백, 배경색 */
+    div {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      background-color: orange;
+      /* border: 5px solid green; */
+      /* padding: 10px; */
+    }
+    /* box-sizing : 크기 계산 방법 */
+    /* 
+    외부 여백 : 10 * 2
+    테두리 : 5 * 2
+    내부 여백 : 10 * 2
+    컨텐츠 : 100 
+    */
+    /* 너비 : 150px */
+    .box1 {
+      border: 5px solid green;
+      padding: 10px;
+      box-sizing: content-box; /* 컨텐츠만 너비로 계산 */
+    }
+    .box2 {
+      border: 5px solid green;
+      padding: 10px;
+      box-sizing: border-box; /* 컨텐츠 + 내부여백 + 테두리선 모두 포함하여 계산 */
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">hello</div>
+  <div class="box2">hello</div>
+</body>
+</html>

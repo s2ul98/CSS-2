@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    div, span {
+      border: 1px solid;
+    }
+    /* 블록요소는 크기를 변경할 수 있다 */
+    #div1 {
+      width: 200px;
+      height: 100px;
+    }
+    /* 인라인 요소는 크기를 변경할 수 없다 */
+    span {
+      width: 200px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1">hello world</div>
+  <div id="div2">hello world</div>
+  <span>안냥하세요</span>
+</body>
+</html>
+
+<!-- 
+div는 블록요소
+블록요소는 너비가 화면의 크기만큼 늘어난다
+
+span은 인라인요소
+인라인 요소는 너비가 컨텐츠 크기만큼 늘어난다
+-->
