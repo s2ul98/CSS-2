@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* box 공통 스타일 */
+    div {
+      width: 500px;
+      height: 300px;
+      border: 1px solid;
+      margin: 10px;
+    }
+    /* 2~8번에는 이미지 넣기 */
+    .img_div {
+      background-image: url(./img/고양이.png);
+    }
+    .div1 {
+      background-color: bisque;
+    }
+    /* 이미지를 가로로 반복 */
+    /* 부모의 크기가 이미지보다 클때, 이미지를 반복하여 출력 */
+    .div3 {
+      background-color: repeat-x;
+    }
+    /* 이미지를 세로로 반복 */
+    .div4 {
+      background-color: repeat-y;
+    }
+    /* 반복 안함 */
+    .div5 {
+      background-color: no-repeat;
+    }
+    /* 이미지 위치를 우상단으로 고정 */
+    .div6 {
+      background-color: no-repeat;
+      /* background-position: top right; */
+      background-position: bottom left;
+    }
+    .div7 {
+      background-color: no-repeat;
+      background-size: 100px 100px;
+      /* 왼쪽에서 10만큼 위에서 20만큼 */
+      background-position: 10px 20px;
+    }
+    /* 이미지의 크기를 div에 맞게 조절 */
+    .div8 {
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="img_div1"></div>
+  <!-- 2~7번은 class가 2개 -->
+  <div class="img_div div2"></div>
+  <div class="img_div div3"></div>
+  <div class="img_div div4"></div>
+  <div class="img_div div5"></div>
+  <div class="img_div div6"></div>
+  <div class="img_div div7"></div>
+  <div class="img_div div8"></div>
+</body>
+</html>

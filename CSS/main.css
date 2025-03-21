@@ -1,0 +1,18 @@
+h1 { /* 타이틀에 배경색, 글자색 변경 */
+  background-color: darkblue;
+  color: white;
+  display: inline-block;
+}
+/* span태그 강조 */
+.word {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+/* 
+h태그는 블록요소
+블록요서는 너비가 화면 크기만큼 늘어난다 
+inline inline-block은 너비가 컨텐츠만큼 늘어난다
+*/

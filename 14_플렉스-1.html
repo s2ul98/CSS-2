@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /*  */
+    div {
+      width: 700  px;
+      border: 1px solid;
+      padding: auto;
+    }
+    p {
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+    }
+    /* p를 block에서 inline-block으로 변경 */
+    .parent1 > p {
+      display: inline-block;
+    }
+    /* float : left => display : inline-block + 왼쪽 정렬 */
+    /* 단점 : 부모가 자식의 높이를 인식하지 못하면 줄이 무너질 수 있음 */
+    .parent2 > p {
+      float: left;
+    }
+    .parent2 {
+      height: 130px;
+    }
+    /* 부모 div를 flex box로 설정 */
+    /* 자식들을 아이템으로 인식하여 정렬 */
+    .parent3 {
+      display: flex;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 아이템 정렬하기 -->
+   <h3>inline-block</h3>
+   <div class="parent1">
+    <p>child1</p>
+    <p>child2</p>
+    <p>child3</p>
+    <p>child4</p>
+    <p>child5</p>
+   </div>
+   
+   <h3>float : left</h3>
+   <div class="parent2">
+    <p>child1</p>
+    <p>child2</p>
+    <p>child3</p>
+    <p>child4</p>
+    <p>child5</p>
+   </div>
+
+   <h3>dispaly-</h3>
+   <div class="parent3">
+    <p>child1</p>
+    <p>child2</p>
+    <p>child3</p>
+    <p>child4</p>
+    <p>child5</p>
+   </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* 내비게이션(메뉴바) 스타일 */
+nav {
+  background-color: #333;
+  width: 100%;
+  /* 링크 가운데 정렬 */
+  text-align: center;
+  /* 화면 상단에 메뉴바 고정 */
+  position: fixed;
+  top: 0;
+}
+/* 메뉴바 안에 링크 스타일 */
+/* 하위 선택자 */
+nav a {
+  color: white;
+  font-size: 18px;
+  /* 링크 언더라인 제거 */
+  text-decoration: none;
+  padding: 20px;
+}
+/* 메뉴 항목에 마우스를 올리면 배경색 변경 */
+/* 상태선택자 사용 */
+nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* 메인 스타일 */
+main {
+  /* 위쪽 여백 */
+  margin-top: 40px;
+    /* 링크 가운데 정렬 */
+    text-align: center;
+}
+
+/* 스크롤 만들기 */
+footer {
+  height: 1500px;
+}

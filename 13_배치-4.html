@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+   * {
+    margin: 0;
+   }
+   p {
+    border: 1px solid;
+    width: 300px;
+    height: 100px;
+   }
+    .child1 {
+      background-color: lavender;
+    }
+    /* fixed : 뷰포트(브라우저화면)을 기준으로 이동 */
+    /* 고정된 위치 */
+  
+    .child2 {
+      background-color: lightblue;
+      position: fixed;   /* 예 : 메뉴바 */
+      top: 50px; 
+      right: 50px;
+    }
+    .child3 {
+      background-color: lightcoral;
+    }
+    .box {
+      height: 1500px;
+      border: 1px solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <p class="child1">child1</p>
+    <p class="child2">child2</p>
+    <p class="child3">child3</p>
+  </div>
+  <div class="box"></div>
+</body>
+</html>

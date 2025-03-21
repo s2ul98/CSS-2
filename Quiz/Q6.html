@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    div {
+      background-color: rgb(241, 255, 214);
+      padding: 20px;
+      width: 80%;
+      text-align: left;
+      border-radius: 10px;
+    }
+    h3 {
+      color: rgb(0, 59, 23);
+      
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    label {
+      margin: 10px 0;
+      
+    }
+    input, select, textarea {
+      margin: 5px 0;
+      padding: 5px;
+      width: 100%;
+      box-sizing: border-box;
+      
+    }
+    button {
+      background-color: rgb(0, 100, 25);
+      color: white;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: rgb(0, 58, 19);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h3>숙박 예약</h3>
+    <form action="localhost:8080">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="checkin">체크인 날짜:</label>
+        <input type="date" id="checkin" name="checkin">
+
+        <label for="checkout">체크아웃 날짜:</label>
+        <input type="date" id="checkout" name="checkout">
+
+        <label for="room-type">객실 유형:</label>
+        <select id="room-type" name="room-type">
+            <option value="single">싱글룸</option>
+            <option value="double">더블룸</option>
+            <option value="suite">스위트룸</option>
+        </select>
+
+        <label for="requests">요청 사항:</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="요청 사항을 입력하세요."></textarea>
+
+        <button type="submit">예약하기</button>
+    </form>
+</div>
+</body>
+</html>

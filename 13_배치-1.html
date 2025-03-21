@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 전체 선택자 */
+    * {
+      margin: 0; /* 여백 제거 */
+    }
+    p { /* p 공통 스타일 */
+      border: 1px solid;
+      width: 300px;
+      height: 100px;
+    }
+    /* 각 박스의 배경색 설정 */
+    .child1{
+      background-color: lavender;
+    }
+    .child2{
+      background-color: lightblue;
+    }
+    .child3{
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <!-- div의 positon 속성은 static으로 설정됨 -->
+   <!-- 기본값 : static (위에서 아래로 쌓임) -->
+  <div class="parent">
+    <p class="child1">child1</p>
+    <p class="child2">child2</p>
+    <p class="child3">child3</p>
+  </div>
+</body>
+</html>

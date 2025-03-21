@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    * {
+      margin: 0; 
+    }
+    p {
+      border: 1px solid;
+      width: 300px;
+      height: 100px;
+    }
+    .child1 {
+      background-color: lavender;
+    }
+    /* absolute : 부모를 기준으로 이동 */
+    .child2 {
+      background-color: lightblue;
+      position: absolute; 
+      right: 50px; /* 왼쪽으로 50 이동 */
+ 
+    }
+    .child3 {
+      background-color:  lightcoral;
+      position: absolute;
+      top: 50px; /* 아래로 50 이동 */
+    }
+    /* 부모 div 스타일 */
+    /*  position: relative 기준으로 설정 */
+    /* 자식 요소에서  position: relative을 사용할때 기준이 됨 */
+    /* 만약에 기준이 없으면 body 태그가 기준이 됨 */
+    .parent {
+      border: 2px solid chartreuse;
+      width: 800px;
+      height: 500px;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <p class="child1">child1</p>
+    <p class="child2">child2</p>
+    <p class="child3">child3</p>
+  </div>
+</body>
+</html>
